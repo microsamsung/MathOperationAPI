@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathOperationAPI", "MathOperationAPI.csproj", "{BB132D07-53FD-4B88-86B7-69E75663F06B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathOperationAPITests", "..\MathOperationAPITests\MathOperationAPITests.csproj", "{A28E7CEA-6CF3-4F50-8ACB-0D7B6F0A4E00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB132D07-53FD-4B88-86B7-69E75663F06B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB132D07-53FD-4B88-86B7-69E75663F06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB132D07-53FD-4B88-86B7-69E75663F06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB132D07-53FD-4B88-86B7-69E75663F06B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A28E7CEA-6CF3-4F50-8ACB-0D7B6F0A4E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28E7CEA-6CF3-4F50-8ACB-0D7B6F0A4E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28E7CEA-6CF3-4F50-8ACB-0D7B6F0A4E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28E7CEA-6CF3-4F50-8ACB-0D7B6F0A4E00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDDCD258-9D35-410D-B215-64951AC32545}
+	EndGlobalSection
+EndGlobal
