@@ -28,7 +28,7 @@ namespace MathOperationAPI.Controllers
         [SwaggerResponse(200, "Arithmetic operation done successfully")]
         [SwaggerResponse(400, "Invalid request")]
         [SwaggerResponse(500, "Internal server error")]
-        [HttpGet]
+        [HttpGet ("Calculate")]
         public async Task<IActionResult> Get([FromQuery] CalculatorRequest request)
         {
             if (!ModelState.IsValid)
