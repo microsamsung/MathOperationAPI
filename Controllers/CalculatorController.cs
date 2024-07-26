@@ -24,6 +24,7 @@ namespace MathOperationAPI.Controllers
         /// <response code="200">Returns the result of the operation.</response>
         /// <response code="400">If the input is invalid or an exception occurs.</response>
         /// <response code="500">Internal server error.</response>
+        [SwaggerOperation(Summary = "Creates a new arithmetic operation.")]
         [SwaggerResponse(200, "Arithmetic operation done successfully")]
         [SwaggerResponse(400, "Invalid request")]
         [SwaggerResponse(500, "Internal server error")]
