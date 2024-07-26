@@ -2,7 +2,6 @@
 using MathOperationAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
-using System.Threading.Tasks;
 
 namespace MathOperationAPI.Controllers
 {
