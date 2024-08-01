@@ -28,24 +28,24 @@ namespace MathOperationAPI.Controllers
         [SwaggerResponse(200, "Arithmetic operation done successfully")]
         [SwaggerResponse(400, "Invalid request")]
         [SwaggerResponse(500, "Internal server error")]
-        [HttpGet ("Calculate")]
+        [HttpGet("Calculate")]
         public async Task<IActionResult> Get([FromQuery] CalculatorRequest request)
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(new { success = false, error = "Invalid input data" });
+                return BadRequest(new MathResponse { Success = false, Data = "Invalid input data" });
             }
 
             try
             {
                 var result = await _calculatorService.PerformOperationAsync(request.OperationType, request.FirstOperand, request.SecondOperand);
-                return Ok(new { success = true, data = new { result } });
+                return Ok(new MathResponse { Success = true, Data = new { result }});
             }
             catch (Exception ex)
             {
                 // Log exception details if necessary
                 // Logger.LogError(ex, "An error occurred while performing the operation");
-                return StatusCode(500, new { success = false, error = "Internal server error" });
+                return StatusCode(500, new MathResponse { Success = false, Data = "Internal server error" });
             }
         }
     }
